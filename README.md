@@ -48,19 +48,36 @@ Open the JSON traces to compare the goals, prefixes, chosen residues, and simple
 
 Two recorded Jev runs are in [`examples/`](examples/). With a goal of a glycine-rich toy peptide, it produced `GGGGGGGGGGGGGGG`. With a goal of alternating glycine and serine without identical neighbors, it produced `GSGSGSGS`. The second trace shows the prefix changing before each choice. These runs illustrate that Jev can follow simple sequence composition instructions; they also show how easily a naive prompt can collapse into a repetitive sequence. Results may vary between model versions and runs.
 
-### Search for similar annotated proteins
+### Compare with known proteins using local BLAST+
 
-Add `--search` to submit the generated sequence to [NCBI BLASTP](https://blast.ncbi.nlm.nih.gov/doc/blast-help/urlapi.html) against the curated Swiss-Prot database. NCBI asks API users to provide a contact email and limit request frequency, so pass your own address with `--ncbi-email`:
+Install [BLAST+](https://www.ncbi.nlm.nih.gov/books/NBK279690/) and build a local database from [UniProtKB/Swiss-Prot reviewed sequences](https://www.uniprot.org/help/downloads). The database download and index stay in the ignored `data/` directory and are **not** included in Git. Building it requires several hundred MB of disk space and may take a few minutes. On macOS with Homebrew:
+
+```bash
+brew install blast
+jev-protein-design-db
+```
+
+On other systems, install NCBI BLAST+ so `makeblastdb`, `blastp`, and `blastdbcmd` are on your path, then run `jev-protein-design-db`. Use `jev-protein-design-db --refresh` to download a new Swiss-Prot release. After setup, `--search` runs entirely on your machine and needs no NCBI email:
 
 ```bash
 jev-protein-design \
   --function "a small soluble enzyme-like protein" \
   --min-length 25 --max-length 40 \
-  --search --ncbi-email you@example.org \
+  --search \
   --trace designs/with-search.json
 ```
 
-The search prints up to three similar annotated proteins with a title, accession link, E-value, identity, and query coverage. When available, it also retrieves the known protein's function annotation from [UniProtKB](https://www.uniprot.org/help/api). Check whether that annotation relates to your request, and whether the match spans much of your sequence. A short or low-complexity match can occur by chance; even a strong match does **not** show that the newly generated sequence has the same function. If the sequence is shorter than 15 residues, the program skips the search as too ambiguous. NCBI can take several minutes to return results. The generated sequence and your contact email go to NCBI; hit accessions go to UniProt. The Jev key stays local and is sent only to TypeSafe AI.
+The search prints up to three reviewed proteins with a name, UniProt accession link, E-value, identity, and query coverage. Open the linked record to inspect its curated **Function** annotation, and compare that annotation with the requested function. A hit is evidence of sequence similarity, **not a measured quality score or proof of the requested function**. Interpret E-value together with identity and query coverage; short or repetitive matches may occur by chance. The CLI warns when a candidate is shorter than 30 residues or has low sequence complexity. It skips similarity search below 15 residues. For 15–29 residues, it uses BLASTP's short-query task. The local search itself sends neither your sequence nor your key to a similarity service.
+
+To assess an existing sequence without making more Jev calls, run `jev-protein-design-check --sequence ACDEFGHIKLMNPQRSTVWY` or `jev-protein-design-check --fasta examples/glycine.fasta`. This reads the same local database and reports the same similarity evidence and cautions.
+
+In the recorded toy example, the 15-residue `GGGGGGGGGGGGGGG` sequence produced no reviewed Swiss-Prot hits and triggered both short-sequence and low-complexity cautions. As a search sanity check, a known 147-residue human hemoglobin beta chain retrieved from the same database returned full-length, 100%-identity matches. This validates the lookup path; it does not validate Jev's designs.
+
+The previous NCBI web search remains available as `--search-ncbi --ncbi-email you@example.org`. That option sends the sequence and contact email to NCBI and fetches annotations from UniProt; it can take several minutes. The Jev key is sent only to TypeSafe AI in either mode.
+
+### Structure checks
+
+[ColabFold](https://github.com/sokrypton/ColabFold) and [Boltz](https://api.boltz.bio/docs/api/guides/predictions/) can predict a candidate's structure, but their confidence values do **not** establish the requested biological function. A meaningful structure comparison also needs a relevant reference structure and an alignment, followed by experimental validation. This toy project does not submit structure jobs automatically. Boltz's [cost guide](https://api.boltz.bio/docs/api/guides/costs/) says live-key runs are billed; its separate test-mode keys return synthetic results. Obtain a cost estimate before starting any live Boltz run.
 
 ## How it works
 
@@ -75,7 +92,7 @@ function request + current sequence
               └────────────── repeat
 ```
 
-Jev is a [typed decision model](https://typesafe.ai/blog/introducing-system-one-models-and-jev), not a sequence generator. This project turns sequence generation into a series of fixed-menu decisions. The state includes the desired function, current prefix, simple counts observed from that prefix, position, and length bounds. These counts are computed by code and change after every residue. The model's choice and the preceding state are recorded at each step; a JSON trace can be saved for inspection. Optionally, a BLAST similarity lookup follows generation; it is evidence for comparison, not a feedback signal used during generation.
+Jev is a [typed decision model](https://typesafe.ai/blog/introducing-system-one-models-and-jev), not a sequence generator. This project turns sequence generation into a series of fixed-menu decisions. The state includes the desired function, current prefix, simple counts observed from that prefix, position, and length bounds. These counts are computed by code and change after every residue. The model's choice and the preceding state are recorded at each step; a JSON trace can be saved for inspection. Optionally, a local BLAST similarity lookup follows generation; it is evidence for comparison, not a feedback signal used during generation.
 
 STOP is always one of the 21 options. If Jev chooses it before `--min-length`, the program uses the highest-probability amino acid from that same response and continues. At `--max-length`, the program stops regardless of Jev's preference. There is no search over structures, feedback loop from experiments, or guarantee of diversity between runs.
 

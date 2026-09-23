@@ -23,7 +23,7 @@ class CliTests(unittest.TestCase):
                  patch("jev_protein_design.cli.generate_sequence", return_value=design), \
                  patch("jev_protein_design.cli.search_swissprot", return_value=[hit]), \
                  redirect_stdout(output):
-                status = main(["--function", "test reaction", "--search", "--ncbi-email",
+                status = main(["--function", "test reaction", "--search-ncbi", "--ncbi-email",
                                "owner@example.org", "--trace", str(trace)])
             self.assertEqual(status, 0)
             self.assertIn("Catalyzes a test reaction", output.getvalue())

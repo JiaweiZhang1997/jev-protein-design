@@ -9,6 +9,8 @@ import sys
 from pathlib import Path
 
 from .core import JevError, generate_sequence, load_local_env
+from .local_blast import DEFAULT_DB, search_local_swissprot
+from .quality import sequence_cautions
 from .search import SearchError, search_swissprot
 
 
@@ -22,15 +24,19 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--delay", type=float, default=0.0, help="Seconds between API calls")
     parser.add_argument("--output", type=Path, help="Optional FASTA output path")
     parser.add_argument("--trace", type=Path, help="Optional JSON trace path; contains no key")
-    parser.add_argument("--search", action="store_true", help="Search each sequence against NCBI Swiss-Prot with BLASTP")
-    parser.add_argument("--ncbi-email", help="Contact email required by NCBI BLAST when using --search")
+    parser.add_argument("--search", action="store_true", help="Search each sequence against a local Swiss-Prot BLAST+ database")
+    parser.add_argument("--blast-db", type=Path, default=DEFAULT_DB, help="Local BLAST database prefix")
+    parser.add_argument("--search-ncbi", action="store_true", help="Optional online NCBI BLASTP search")
+    parser.add_argument("--ncbi-email", help="Contact email required by NCBI BLAST when using --search-ncbi")
     parser.add_argument("--env-file", type=Path, default=Path(".env"), help="Local key file (default: ./.env)")
     args = parser.parse_args(argv)
 
     if not 1 <= args.count <= 10:
         parser.error("--count must be between 1 and 10")
-    if args.search and not args.ncbi_email:
-        parser.error("--search requires --ncbi-email, per NCBI's API guidelines")
+    if args.search and args.search_ncbi:
+        parser.error("Use either --search or --search-ncbi")
+    if args.search_ncbi and not args.ncbi_email:
+        parser.error("--search-ncbi requires --ncbi-email, per NCBI's API guidelines")
     load_local_env(args.env_file)
     api_key = os.environ.get("TYPESAFE_API_KEY", "").strip()
     if not api_key or api_key == "replace-with-your-own-key":
@@ -51,12 +57,16 @@ def main(argv: list[str] | None = None) -> int:
             designs.append(design)
             print(f">jev_design_{index} goal={json.dumps(args.goal, ensure_ascii=False)} stopped={design.stopped}")
             print(design.sequence)
-            if args.search:
+            cautions = sequence_cautions(design.sequence)
+            for caution in cautions:
+                print(f"  Caution: {caution}")
+            if args.search or args.search_ncbi:
                 try:
-                    hits = search_swissprot(design.sequence, email=args.ncbi_email)
+                    hits = (search_local_swissprot(design.sequence, prefix=args.blast_db) if args.search
+                            else search_swissprot(design.sequence, email=args.ncbi_email))
                     search_results.append([hit.to_dict() for hit in hits])
                     if hits:
-                        print("  Similar annotated proteins (similarity is not proof of function):")
+                        print("  Similar reviewed proteins (similarity is not proof of function):")
                         for hit in hits:
                             print(f"  - {hit.accession}: {hit.title} | E={hit.evalue:.2g} | identity={hit.identity_fraction:.0%} | query coverage={hit.query_coverage_fraction:.0%}")
                             if hit.function_annotation:
@@ -89,6 +99,7 @@ def main(argv: list[str] | None = None) -> int:
                             "sequence": design.sequence,
                             "stopped": design.stopped,
                             "steps": [vars(step) for step in design.steps],
+                            "cautions": sequence_cautions(design.sequence),
                             "similarity_search": search_results[index - 1],
                         }
                         for index, design in enumerate(designs, 1)

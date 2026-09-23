@@ -13,6 +13,8 @@ dependencies = []
 
 [project.scripts]
 jev-protein-design = "jev_protein_design.cli:main"
+jev-protein-design-db = "jev_protein_design.local_blast:main"
+jev-protein-design-check = "jev_protein_design.local_blast:check_main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
