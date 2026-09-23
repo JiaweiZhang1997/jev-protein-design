@@ -1,0 +1,116 @@
+{
+  "goal": "a toy peptide alternating glycine and serine with no identical adjacent residues",
+  "designs": [
+    {
+      "sequence": "GSGSGSGS",
+      "stopped": false,
+      "steps": [
+        {
+          "position": 1,
+          "choice": "G",
+          "confidence": 0.96,
+          "prefix_before": "",
+          "properties_before": {
+            "length": 0,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 0
+          }
+        },
+        {
+          "position": 2,
+          "choice": "S",
+          "confidence": 1.0,
+          "prefix_before": "G",
+          "properties_before": {
+            "length": 1,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 0
+          }
+        },
+        {
+          "position": 3,
+          "choice": "G",
+          "confidence": 0.95,
+          "prefix_before": "GS",
+          "properties_before": {
+            "length": 2,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 0
+          }
+        },
+        {
+          "position": 4,
+          "choice": "S",
+          "confidence": 0.98,
+          "prefix_before": "GSG",
+          "properties_before": {
+            "length": 3,
+            "glycine_count": 2,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 0
+          }
+        },
+        {
+          "position": 5,
+          "choice": "G",
+          "confidence": 0.83,
+          "prefix_before": "GSGS",
+          "properties_before": {
+            "length": 4,
+            "glycine_count": 2,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 0
+          }
+        },
+        {
+          "position": 6,
+          "choice": "S",
+          "confidence": 0.93,
+          "prefix_before": "GSGSG",
+          "properties_before": {
+            "length": 5,
+            "glycine_count": 3,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 0
+          }
+        },
+        {
+          "position": 7,
+          "choice": "G",
+          "confidence": 0.69,
+          "prefix_before": "GSGSGS",
+          "properties_before": {
+            "length": 6,
+            "glycine_count": 3,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 0
+          }
+        },
+        {
+          "position": 8,
+          "choice": "S",
+          "confidence": 0.97,
+          "prefix_before": "GSGSGSG",
+          "properties_before": {
+            "length": 7,
+            "glycine_count": 4,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 0
+          }
+        }
+      ],
+      "similarity_search": null
+    }
+  ]
+}
