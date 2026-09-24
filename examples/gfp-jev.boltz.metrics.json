@@ -1,0 +1,18 @@
+{
+  "model": "boltz-2.1",
+  "sequence_file": "gfp-jev.fasta",
+  "structure_file": "gfp-jev.boltz.cif",
+  "estimated_cost_usd": "0.0250",
+  "retrieved_utc": "2026-09-24T05:15:50.056654+00:00",
+  "metrics": {
+    "structure_confidence": 0.3130534291267395,
+    "ptm": 0.20399366319179535,
+    "iptm": 0,
+    "ligand_iptm": 0,
+    "protein_iptm": 0,
+    "complex_plddt": 0.34031835198402405,
+    "complex_iplddt": 0.34031835198402405,
+    "complex_pde": 4.459991931915283,
+    "complex_ipde": 0
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "gfp-jev": {
+    "known_reference": "gfp-reference-P42212",
+    "experimental_structure": "gfp-reference-1GFL-A.pdb",
+    "sequence": {
+      "candidate_length": 238,
+      "reference_length": 238,
+      "aligned_residue_pairs": 169,
+      "identical_pairs": 32,
+      "identity_among_aligned_pairs": 0.1893491124260355,
+      "identity_per_longer_sequence": 0.13445378151260504,
+      "candidate_coverage": 0.7100840336134454,
+      "reference_coverage": 0.7100840336134454,
+      "candidate_distinct_amino_acids": 17,
+      "candidate_most_common_residue": [
+        "V",
+        55
+      ],
+      "candidate_longest_identical_run": 4,
+      "candidate_unique_fourmers": 206,
+      "candidate_total_fourmers": 235
+    },
+    "candidate_vs_reference_boltz": {
+      "aligned_length": 133,
+      "aligned_rmsd_angstrom": 6.29,
+      "aligned_sequence_identity": 0.083,
+      "tm_score_normalized_by_candidate": 0.30795,
+      "tm_score_normalized_by_reference": 0.30795
+    },
+    "reference_boltz_vs_experimental": {
+      "aligned_length": 230,
+      "aligned_rmsd_angstrom": 0.47,
+      "aligned_sequence_identity": 0.991,
+      "tm_score_normalized_by_candidate": 0.96102,
+      "tm_score_normalized_by_reference": 0.99429
+    },
+    "candidate_boltz_vs_experimental": {
+      "aligned_length": 129,
+      "aligned_rmsd_angstrom": 6.46,
+      "aligned_sequence_identity": 0.047,
+      "tm_score_normalized_by_candidate": 0.29262,
+      "tm_score_normalized_by_reference": 0.29924
+    }
+  },
+  "rubisco-jev": {
+    "known_reference": "rubisco-reference-P00875",
+    "experimental_structure": "rubisco-reference-8QJ0-L.pdb",
+    "sequence": {
+      "candidate_length": 475,
+      "reference_length": 475,
+      "aligned_residue_pairs": 346,
+      "identical_pairs": 103,
+      "identity_among_aligned_pairs": 0.2976878612716763,
+      "identity_per_longer_sequence": 0.2168421052631579,
+      "candidate_coverage": 0.728421052631579,
+      "reference_coverage": 0.728421052631579,
+      "candidate_distinct_amino_acids": 18,
+      "candidate_most_common_residue": [
+        "A",
+        100
+      ],
+      "candidate_longest_identical_run": 8,
+      "candidate_unique_fourmers": 396,
+      "candidate_total_fourmers": 472
+    },
+    "candidate_vs_reference_boltz": {
+      "aligned_length": 202,
+      "aligned_rmsd_angstrom": 7.68,
+      "aligned_sequence_identity": 0.054,
+      "tm_score_normalized_by_candidate": 0.24574,
+      "tm_score_normalized_by_reference": 0.24574
+    },
+    "reference_boltz_vs_experimental": {
+      "aligned_length": 438,
+      "aligned_rmsd_angstrom": 0.65,
+      "aligned_sequence_identity": 0.998,
+      "tm_score_normalized_by_candidate": 0.9159,
+      "tm_score_normalized_by_reference": 0.9928
+    },
+    "candidate_boltz_vs_experimental": {
+      "aligned_length": 193,
+      "aligned_rmsd_angstrom": 7.5,
+      "aligned_sequence_identity": 0.083,
+      "tm_score_normalized_by_candidate": 0.24446,
+      "tm_score_normalized_by_reference": 0.25944
+    }
+  }
+}

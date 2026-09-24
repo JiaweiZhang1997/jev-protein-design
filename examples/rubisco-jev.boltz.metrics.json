@@ -1,0 +1,18 @@
+{
+  "model": "boltz-2.1",
+  "sequence_file": "rubisco-jev.fasta",
+  "structure_file": "rubisco-jev.boltz.cif",
+  "estimated_cost_usd": "0.0500",
+  "retrieved_utc": "2026-09-24T05:28:28.147298+00:00",
+  "metrics": {
+    "structure_confidence": 0.29827746748924255,
+    "ptm": 0.16366638243198395,
+    "iptm": 0,
+    "ligand_iptm": 0,
+    "protein_iptm": 0,
+    "complex_plddt": 0.3319302201271057,
+    "complex_iplddt": 0.3319302201271057,
+    "complex_pde": 4.368156433105469,
+    "complex_ipde": 0
+  }
+}

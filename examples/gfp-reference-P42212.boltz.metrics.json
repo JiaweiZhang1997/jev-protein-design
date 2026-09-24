@@ -1,0 +1,18 @@
+{
+  "model": "boltz-2.1",
+  "sequence_file": "gfp-reference-P42212.fasta",
+  "structure_file": "gfp-reference-P42212.boltz.cif",
+  "estimated_cost_usd": "0.0250",
+  "retrieved_utc": "2026-09-24T05:10:41.972678+00:00",
+  "metrics": {
+    "structure_confidence": 0.9437389373779297,
+    "ptm": 0.9338238835334778,
+    "iptm": 0,
+    "ligand_iptm": 0,
+    "protein_iptm": 0,
+    "complex_plddt": 0.9462177157402039,
+    "complex_iplddt": 0.9462177157402039,
+    "complex_pde": 0.3763583302497864,
+    "complex_ipde": 0
+  }
+}

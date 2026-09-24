@@ -48,34 +48,60 @@ Open the JSON traces to compare the goals, prefixes, chosen residues, and simple
 
 Two recorded Jev runs are in [`examples/`](examples/). With a goal of a glycine-rich toy peptide, it produced `GGGGGGGGGGGGGGG`. With a goal of alternating glycine and serine without identical neighbors, it produced `GSGSGSGS`. The second trace shows the prefix changing before each choice. These runs illustrate that Jev can follow simple sequence composition instructions; they also show how easily a naive prompt can collapse into a repetitive sequence. Results may vary between model versions and runs.
 
-### Two longer sequence and structure examples
+### Two function-targeted sequence and structure comparisons
 
-For a more readable structure comparison, Jev was asked to make **two 64-residue sequences** on 24 September 2026. Each residue was still selected from the same 21 options. One prompt asked for an A/L/E/K-rich helix-like scaffold; the other asked for a G/S-rich flexible linker. The complete outputs are:
+On 24 September 2026, Jev was asked to design a **238-residue green fluorescent protein** and a **475-residue RuBisCO large chain**. It selected one of the same 20 amino acids or STOP at every position. Each goal contained the fixed anti-repetition constraint described below; after the first request, only the accumulated `current_sequence` changed. These are recorded toy outputs, not optimized designs or laboratory results.
+
+The real comparison proteins are [*Aequorea victoria* GFP, UniProt P42212](https://www.uniprot.org/uniprotkb/P42212/entry) and [spinach RuBisCO large chain, UniProt P00875](https://www.uniprot.org/uniprotkb/P00875/entry). **The main structural references are their experimental PDB structures:** [1GFL chain A](https://www.rcsb.org/structure/1GFL) and [8QJ0 large chain L](https://www.rcsb.org/structure/8QJ0), respectively. The Jev sequences were each predicted once with Boltz-2.1 as single chains, then aligned to the relevant experimental chain with [USalign](https://github.com/pylelab/USalign). The known sequences were also predicted once with Boltz as a supplementary method check; their predictions are not the main structural references. PDB chains have unresolved residues (230 of 238 GFP and 438 of 475 RuBisCO residues have Cα atoms in the selected chains).
+
+![PyMOL cartoon views of Boltz-predicted Jev GFP and RuBisCO candidates beside experimental PDB protein chains](assets/function-comparison.png)
+
+| Requested function | Jev / real length | Global sequence identity¹ | Jev Boltz vs PDB TM-score² | Boltz structure confidence, Jev / real | Real Boltz vs PDB TM-score² |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| GFP | 238 / 238 | 13.4% (32 pairs) | 0.299 | 0.31 / 0.94 | 0.994 |
+| RuBisCO large chain | 475 / 475 | 21.7% (103 pairs) | 0.259 | 0.30 / 0.91 | 0.993 |
+
+¹ Global pairwise alignment used BLOSUM62, gap-open −10 and gap-extension −0.5. Identity is identical aligned residue pairs divided by the **longer full sequence length**; see [the comparison data](examples/function-comparison.json) for aligned-pair count and coverage. This denominator keeps a short shared fragment from looking like a close full-protein match. ² TM-scores are normalized by the PDB experimental chain length. USalign also reports aligned length and Cα RMSD in the data file. Boltz predictions are single samples. The high scores for known proteins against their own PDB structures are a method check, not a held-out accuracy test. Confidence and structural similarity do not measure biological activity.
+
+This follows the comparison idea behind the [ESM3 esmGFP study](https://doi.org/10.1126/science.ads0018): compare a designed sequence with known fluorescent proteins, then examine structural and functional evidence. That study measured fluorescence experimentally. This project has **no experimental function measurements**, so its computational comparison cannot make the same claim.
+
+**GFP sequence pair (full length):** The Jev sequence used 17 amino-acid types; its most common residue was V (55/238). The reference's chromophore-forming positions 65–67 are `SYG`; the Jev sequence has `EEK` at those positions. The Jev candidate did not return a reviewed hit in the local Swiss-Prot BLAST search. There is no fluorescence assay.
 
 ```fasta
->helix64
-ALEKALEAALAEKAAAELLELLKELELLAAAEELKLAELLLEALALAAKAALEEAAAALAAAEE
->flexible64
-GSGSGSSGSSGGSGSSSGSGGSGSGGGSSSGSGSSGGSSGGGSSSGGGGSGSSSSSGGGSGGSS
+>gfp-jev
+MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDD
+SSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPV
+VVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAALLAALAALASSPPP
+
+>gfp-reference-P42212
+MSKGEELFTGVVPILVELDGDVNGHKFSVSGEGEGDATYGKLTLKFICTTGKLPVPWPTLVTTFSYGVQCFSRYPDHMKQ
+HDFFKSAMPEGYVQERTIFFKDDGNYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNYNSHNVYIMADKQKNG
+IKVNFKIRHNIEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSALSKDPNEKRDHMVLLEFVTAAGITHGMDELYK
 ```
 
-Each sequence was submitted once to [Boltz-2.1](https://api.boltz.bio/docs/api/guides/predictions/) and to [ESMFold v1](https://github.com/facebookresearch/esm#esmfold-structure-prediction). The figure overlays their predicted Cα backbones after rigid alignment of corresponding residue positions. It displays one predicted conformation per model and sequence, not an experimentally observed structure.
+**RuBisCO sequence pair (full length):** The Jev sequence used 18 amino-acid types, but its longest run of one residue was still 8. Its 472 overlapping four-residue windows contain only 396 distinct motifs, so the fixed anti-repetition goal did **not** eliminate local repetition. The candidate returned no reviewed local Swiss-Prot BLAST hit. RuBisCO activity depends on a multi-subunit enzyme and reaction chemistry; a single predicted large chain cannot establish carbon fixation. There is no carbon-fixation assay.
 
-![Two 64-residue Jev sequences and their Boltz versus ESMFold predicted C-alpha backbones](assets/structure-comparison.png)
+```fasta
+>rubisco-jev
+MLILVAGAGLILVAFASVTVPVGGAPGGGLVVIVIIVASGDDREHKNGSAHESAHGSALRHASELHRGGRGAEAHSGHAE
+RKAEVHAGGHAREGSHIGDDGGHDSGAFENLSNLSSNLFALHEDGEGHGGGGLEGLELLLLPAEPGAAGAAGGAPVGAGV
+GEVIIIIIEGAVAEDDERHKRHHERHDHEHDHSRADEDEHNHHRVDAHHAAEGHGGAGGWGGGGGAAGPGGGGGAGGAGG
+GGLAAVEALAALLSLSESSANSAESNLHHSLSLESSSLAHLENLLLSVEEGAGHLPGPLPGPAGPGGAAGGAAAAALVLV
+ELVVVLVLVAVLLLVLLPAAGGPGAAAALVVVVPAAGADEGHHHHHAGGGAADEHDHHHDHAHEDDAAEGAAAHDDASHQ
+HQSGGGGSAGGAGAGAGGGGAAGAAAAAAAASLNLALLLASALALLSASAENLASALDAHSAGLAASEHSDEAHS
 
-| Example | Boltz structure confidence | Boltz mean pLDDT | Boltz N→C distance | Boltz–ESMFold Cα RMSD | Local Swiss-Prot BLAST |
-| --- | ---: | ---: | ---: | ---: | --- |
-| Helix-biased | 0.81 | 0.86 | 16.0 Å | 1.7 Å | No reviewed hit |
-| G/S-rich flexible | 0.56 | 0.60 | 41.7 Å | 14.9 Å | No reviewed hit; low-complexity warning |
+>rubisco-reference-P00875
+MSPQTETKASVEFKAGVKDYKLTYYTPEYETLDTDILAAFRVSPQPGVPPEEAGAAVAAESSTGTWTTVWTDGLTNLDRY
+KGRCYHIEPVAGEENQYICYVAYPLDLFEEGSVTNMFTSIVGNVFGFKALRALRLEDLRIPVAYVKTFQGPPHGIQVERD
+KLNKYGRPLLGCTIKPKLGLSAKNYGRAVYECLRGGLDFTKDDENVNSQPFMRWRDRFLFCAEALYKAQAETGEIKGHYL
+NATAGTCEDMMKRAVFARELGVPIVMHDYLTGGFTANTTLSHYCRDNGLLLHIHRAMHAVIDRQKNHGMHFRVLAKALRL
+SGGDHIHSGTVVGKLEGERDITLGFVDLLRDDYTEKDRSRGIYFTQSWVSTPGVLPVASGGIHVWHMPALTEIFGDDSVL
+QFGGGTLGHPWGNAPGAVANRVALEACVQARNEGRDLAREGNTIIREATKWSPELAAACEVWKEIKFEFPAMDTV
+```
 
-The helix-biased sequence uses only four amino-acid types despite the prompt asking for variety. Its two predicted backbones overlap closely. The G/S-rich sequence repeats only two residue types; Boltz places its termini farther apart, and the two models place its backbone very differently. These differences show why a single appealing structure image is weak evidence for a toy design. **Model agreement, pLDDT, and BLAST similarity do not establish that either sequence folds or performs the requested function.** A BLAST miss does not establish novelty, especially for compositionally biased sequences. The RMSD values are calculated by Kabsch superposition of 64 corresponding Cα atoms; they compare model outputs, not experimental accuracy.
+These two runs do not provide evidence of fluorescence or carbon fixation. The fixed anti-repetition goal did not remove strong local repetition, especially in the RuBisCO candidate. A different real protein with the same function could have a different sequence or fold, so one reference comparison cannot rule a function out either.
 
-The original files are available for inspection:
-
-- Helix-biased: [FASTA](examples/helix64.fasta), [Jev trace](examples/helix64.json), [Boltz mmCIF](examples/helix64.boltz.cif), [Boltz metrics](examples/helix64.boltz.metrics.json), [ESMFold PDB](examples/helix64.esmfold.pdb).
-- G/S-rich: [FASTA](examples/flexible64.fasta), [Jev trace](examples/flexible64.json), [Boltz mmCIF](examples/flexible64.boltz.cif), [Boltz metrics](examples/flexible64.boltz.metrics.json), [ESMFold PDB](examples/flexible64.esmfold.pdb).
-
-To redraw the figure, install the optional `numpy`, `matplotlib`, and `biopython` packages and run `python scripts/render_structure_comparison.py`. Boltz estimated the two live predictions at **$0.025 each** (estimate, not a final bill); ESMFold's public endpoint was used without a key. ESMFold output is attributed to Meta Platforms, Inc. under the [ESM Metagenomic Atlas terms and CC BY 4.0 notice](https://esmatlas.com/about).
+Raw files are available for inspection: [Jev GFP FASTA](examples/gfp-jev.fasta), [Jev trace](examples/gfp-jev.json), [Jev Boltz mmCIF](examples/gfp-jev.boltz.cif), [real GFP FASTA](examples/gfp-reference-P42212.fasta), [GFP experimental chain](examples/gfp-reference-1GFL-A.pdb); [Jev RuBisCO FASTA](examples/rubisco-jev.fasta), [Jev trace](examples/rubisco-jev.json), [Jev Boltz mmCIF](examples/rubisco-jev.boltz.cif), [real RuBisCO FASTA](examples/rubisco-reference-P00875.fasta), and [RuBisCO experimental chain](examples/rubisco-reference-8QJ0-L.pdb). The supplementary [Boltz real GFP](examples/gfp-reference-P42212.boltz.cif) and [Boltz real RuBisCO](examples/rubisco-reference-P00875.boltz.cif) predictions are also included. Each Boltz structure has a neighboring `.boltz.metrics.json` file. Recreate [the comparison data](examples/function-comparison.json) with `python scripts/compare_function_examples.py`, then redraw the cartoon with `python scripts/render_cartoon_comparison.py`; this needs optional `numpy`, `biopython`, `matplotlib`, and `Pillow` packages plus USalign and PyMOL on your path. The four Boltz live-key runs had a combined preflight estimate of **$0.150 USD**; the actual bill may differ.
 
 ### Compare with known proteins using local BLAST+
 
@@ -106,7 +132,7 @@ The previous NCBI web search remains available as `--search-ncbi --ncbi-email yo
 
 ### Structure checks
 
-[ColabFold](https://github.com/sokrypton/ColabFold), [Boltz](https://api.boltz.bio/docs/api/guides/predictions/), and ESMFold can predict a candidate's structure, but their confidence values do **not** establish the requested biological function. A meaningful comparison with a known protein also needs a relevant reference structure and structural alignment, followed by experimental validation. The two examples above were submitted manually; the generation CLI does not submit structure jobs automatically. Boltz's [cost guide](https://api.boltz.bio/docs/api/guides/costs/) says live-key runs are billed; its separate test-mode keys return synthetic results. Obtain a cost estimate before starting any live Boltz run.
+[Boltz](https://api.boltz.bio/docs/api/guides/predictions/) and [ColabFold](https://github.com/sokrypton/ColabFold) can predict candidate structures, but confidence values do **not** establish biological function. The examples above compare Boltz-predicted Jev candidates directly against experimental PDB protein chains. They were submitted manually; the generation CLI does not submit structure jobs automatically. Boltz's [cost guide](https://api.boltz.bio/docs/api/guides/costs/) says live-key runs are billed; its separate test-mode keys return synthetic results. Obtain a cost estimate before starting any live Boltz run.
 
 ## How it works
 

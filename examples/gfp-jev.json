@@ -1,0 +1,4057 @@
+{
+  "goal": "Educational toy: design a 238-residue green fluorescent protein with an 11-stranded beta-barrel, a central helix, and a plausible X-Y-G chromophore-forming motif around residues 65-67. Use a diverse amino-acid alphabet, a plausible hydrophobic core and polar surface, and avoid homopolymers or repeated short motifs. Do not copy a known sequence.",
+  "designs": [
+    {
+      "sequence": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAALLAALAALASSPPP",
+      "stopped": false,
+      "steps": [
+        {
+          "position": 1,
+          "choice": "M",
+          "confidence": 0.33,
+          "prefix_before": "",
+          "properties_before": {
+            "length": 0,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 0,
+            "distinct_amino_acid_count": 0,
+            "most_common_amino_acid_count": 0,
+            "trailing_identical_run_length": 0,
+            "longest_identical_run_length": 0
+          }
+        },
+        {
+          "position": 2,
+          "choice": "L",
+          "confidence": 0.13,
+          "prefix_before": "M",
+          "properties_before": {
+            "length": 1,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 1,
+            "distinct_amino_acid_count": 1,
+            "most_common_amino_acid_count": 1,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 3,
+          "choice": "I",
+          "confidence": 0.15,
+          "prefix_before": "ML",
+          "properties_before": {
+            "length": 2,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 2,
+            "distinct_amino_acid_count": 2,
+            "most_common_amino_acid_count": 1,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 4,
+          "choice": "V",
+          "confidence": 0.17,
+          "prefix_before": "MLI",
+          "properties_before": {
+            "length": 3,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 3,
+            "distinct_amino_acid_count": 3,
+            "most_common_amino_acid_count": 1,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 5,
+          "choice": "I",
+          "confidence": 0.09,
+          "prefix_before": "MLIV",
+          "properties_before": {
+            "length": 4,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 4,
+            "distinct_amino_acid_count": 4,
+            "most_common_amino_acid_count": 1,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 6,
+          "choice": "L",
+          "confidence": 0.18,
+          "prefix_before": "MLIVI",
+          "properties_before": {
+            "length": 5,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 5,
+            "distinct_amino_acid_count": 4,
+            "most_common_amino_acid_count": 2,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 7,
+          "choice": "I",
+          "confidence": 0.15,
+          "prefix_before": "MLIVIL",
+          "properties_before": {
+            "length": 6,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 6,
+            "distinct_amino_acid_count": 4,
+            "most_common_amino_acid_count": 2,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 8,
+          "choice": "F",
+          "confidence": 0.08,
+          "prefix_before": "MLIVILI",
+          "properties_before": {
+            "length": 7,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 7,
+            "distinct_amino_acid_count": 4,
+            "most_common_amino_acid_count": 3,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 9,
+          "choice": "V",
+          "confidence": 0.09,
+          "prefix_before": "MLIVILIF",
+          "properties_before": {
+            "length": 8,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 8,
+            "distinct_amino_acid_count": 5,
+            "most_common_amino_acid_count": 3,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 10,
+          "choice": "I",
+          "confidence": 0.11,
+          "prefix_before": "MLIVILIFV",
+          "properties_before": {
+            "length": 9,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 9,
+            "distinct_amino_acid_count": 5,
+            "most_common_amino_acid_count": 3,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 11,
+          "choice": "V",
+          "confidence": 0.11,
+          "prefix_before": "MLIVILIFVI",
+          "properties_before": {
+            "length": 10,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 10,
+            "distinct_amino_acid_count": 5,
+            "most_common_amino_acid_count": 4,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 12,
+          "choice": "L",
+          "confidence": 0.09,
+          "prefix_before": "MLIVILIFVIV",
+          "properties_before": {
+            "length": 11,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 11,
+            "distinct_amino_acid_count": 5,
+            "most_common_amino_acid_count": 4,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 13,
+          "choice": "A",
+          "confidence": 0.11,
+          "prefix_before": "MLIVILIFVIVL",
+          "properties_before": {
+            "length": 12,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 12,
+            "distinct_amino_acid_count": 5,
+            "most_common_amino_acid_count": 4,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 14,
+          "choice": "V",
+          "confidence": 0.08,
+          "prefix_before": "MLIVILIFVIVLA",
+          "properties_before": {
+            "length": 13,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 13,
+            "distinct_amino_acid_count": 6,
+            "most_common_amino_acid_count": 4,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 15,
+          "choice": "S",
+          "confidence": 0.06,
+          "prefix_before": "MLIVILIFVIVLAV",
+          "properties_before": {
+            "length": 14,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 14,
+            "distinct_amino_acid_count": 6,
+            "most_common_amino_acid_count": 4,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 16,
+          "choice": "A",
+          "confidence": 0.07,
+          "prefix_before": "MLIVILIFVIVLAVS",
+          "properties_before": {
+            "length": 15,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 14,
+            "distinct_amino_acid_count": 7,
+            "most_common_amino_acid_count": 4,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 17,
+          "choice": "T",
+          "confidence": 0.06,
+          "prefix_before": "MLIVILIFVIVLAVSA",
+          "properties_before": {
+            "length": 16,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 15,
+            "distinct_amino_acid_count": 7,
+            "most_common_amino_acid_count": 4,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 18,
+          "choice": "I",
+          "confidence": 0.07,
+          "prefix_before": "MLIVILIFVIVLAVSAT",
+          "properties_before": {
+            "length": 17,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 15,
+            "distinct_amino_acid_count": 8,
+            "most_common_amino_acid_count": 4,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 19,
+          "choice": "T",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATI",
+          "properties_before": {
+            "length": 18,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 16,
+            "distinct_amino_acid_count": 8,
+            "most_common_amino_acid_count": 5,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 20,
+          "choice": "I",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATIT",
+          "properties_before": {
+            "length": 19,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 16,
+            "distinct_amino_acid_count": 8,
+            "most_common_amino_acid_count": 5,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 21,
+          "choice": "P",
+          "confidence": 0.06,
+          "prefix_before": "MLIVILIFVIVLAVSATITI",
+          "properties_before": {
+            "length": 20,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 17,
+            "distinct_amino_acid_count": 8,
+            "most_common_amino_acid_count": 6,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 22,
+          "choice": "I",
+          "confidence": 0.06,
+          "prefix_before": "MLIVILIFVIVLAVSATITIP",
+          "properties_before": {
+            "length": 21,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 17,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 6,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 23,
+          "choice": "S",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPI",
+          "properties_before": {
+            "length": 22,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 18,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 7,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 24,
+          "choice": "P",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPIS",
+          "properties_before": {
+            "length": 23,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 18,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 7,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 25,
+          "choice": "S",
+          "confidence": 0.06,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISP",
+          "properties_before": {
+            "length": 24,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 18,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 7,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 26,
+          "choice": "I",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPS",
+          "properties_before": {
+            "length": 25,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 18,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 7,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 27,
+          "choice": "A",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSI",
+          "properties_before": {
+            "length": 26,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 19,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 8,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 28,
+          "choice": "S",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIA",
+          "properties_before": {
+            "length": 27,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 20,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 8,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 29,
+          "choice": "T",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIAS",
+          "properties_before": {
+            "length": 28,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 20,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 8,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 30,
+          "choice": "I",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIAST",
+          "properties_before": {
+            "length": 29,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 20,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 8,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 31,
+          "choice": "S",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTI",
+          "properties_before": {
+            "length": 30,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 21,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 9,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 32,
+          "choice": "I",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTIS",
+          "properties_before": {
+            "length": 31,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 21,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 9,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 33,
+          "choice": "P",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISI",
+          "properties_before": {
+            "length": 32,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 22,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 10,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 34,
+          "choice": "S",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIP",
+          "properties_before": {
+            "length": 33,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 22,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 10,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 35,
+          "choice": "I",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPS",
+          "properties_before": {
+            "length": 34,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 22,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 10,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 36,
+          "choice": "S",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSI",
+          "properties_before": {
+            "length": 35,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 23,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 11,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 37,
+          "choice": "G",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSIS",
+          "properties_before": {
+            "length": 36,
+            "glycine_count": 0,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 23,
+            "distinct_amino_acid_count": 9,
+            "most_common_amino_acid_count": 11,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 38,
+          "choice": "P",
+          "confidence": 0.06,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISG",
+          "properties_before": {
+            "length": 37,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 23,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 11,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 39,
+          "choice": "I",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGP",
+          "properties_before": {
+            "length": 38,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 23,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 11,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 40,
+          "choice": "P",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPI",
+          "properties_before": {
+            "length": 39,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 24,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 12,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 41,
+          "choice": "A",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIP",
+          "properties_before": {
+            "length": 40,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 24,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 12,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 42,
+          "choice": "P",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPA",
+          "properties_before": {
+            "length": 41,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 25,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 12,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 43,
+          "choice": "I",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAP",
+          "properties_before": {
+            "length": 42,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 25,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 12,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 44,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPI",
+          "properties_before": {
+            "length": 43,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 26,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 13,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 45,
+          "choice": "I",
+          "confidence": 0.06,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIV",
+          "properties_before": {
+            "length": 44,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 27,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 13,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 46,
+          "choice": "I",
+          "confidence": 0.08,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVI",
+          "properties_before": {
+            "length": 45,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 28,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 14,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 1
+          }
+        },
+        {
+          "position": 47,
+          "choice": "I",
+          "confidence": 0.08,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVII",
+          "properties_before": {
+            "length": 46,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 29,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 15,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 2
+          }
+        },
+        {
+          "position": 48,
+          "choice": "I",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIII",
+          "properties_before": {
+            "length": 47,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 30,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 16,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 3
+          }
+        },
+        {
+          "position": 49,
+          "choice": "S",
+          "confidence": 0.06,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIII",
+          "properties_before": {
+            "length": 48,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 31,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 4,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 50,
+          "choice": "V",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIIS",
+          "properties_before": {
+            "length": 49,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 31,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 51,
+          "choice": "A",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISV",
+          "properties_before": {
+            "length": 50,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 32,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 52,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVA",
+          "properties_before": {
+            "length": 51,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 33,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 53,
+          "choice": "E",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAV",
+          "properties_before": {
+            "length": 52,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 0,
+            "hydrophobic_AVILMFWY_count": 34,
+            "distinct_amino_acid_count": 10,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 54,
+          "choice": "A",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVE",
+          "properties_before": {
+            "length": 53,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 1,
+            "hydrophobic_AVILMFWY_count": 34,
+            "distinct_amino_acid_count": 11,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 55,
+          "choice": "A",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEA",
+          "properties_before": {
+            "length": 54,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 1,
+            "hydrophobic_AVILMFWY_count": 35,
+            "distinct_amino_acid_count": 11,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 56,
+          "choice": "V",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAA",
+          "properties_before": {
+            "length": 55,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 1,
+            "hydrophobic_AVILMFWY_count": 36,
+            "distinct_amino_acid_count": 11,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 57,
+          "choice": "A",
+          "confidence": 0.06,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAV",
+          "properties_before": {
+            "length": 56,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 1,
+            "hydrophobic_AVILMFWY_count": 37,
+            "distinct_amino_acid_count": 11,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 58,
+          "choice": "V",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVA",
+          "properties_before": {
+            "length": 57,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 1,
+            "hydrophobic_AVILMFWY_count": 38,
+            "distinct_amino_acid_count": 11,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 59,
+          "choice": "L",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAV",
+          "properties_before": {
+            "length": 58,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 1,
+            "hydrophobic_AVILMFWY_count": 39,
+            "distinct_amino_acid_count": 11,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 60,
+          "choice": "V",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVL",
+          "properties_before": {
+            "length": 59,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 1,
+            "hydrophobic_AVILMFWY_count": 40,
+            "distinct_amino_acid_count": 11,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 61,
+          "choice": "L",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLV",
+          "properties_before": {
+            "length": 60,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 1,
+            "hydrophobic_AVILMFWY_count": 41,
+            "distinct_amino_acid_count": 11,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 62,
+          "choice": "L",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVL",
+          "properties_before": {
+            "length": 61,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 1,
+            "hydrophobic_AVILMFWY_count": 42,
+            "distinct_amino_acid_count": 11,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 63,
+          "choice": "L",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLL",
+          "properties_before": {
+            "length": 62,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 1,
+            "hydrophobic_AVILMFWY_count": 43,
+            "distinct_amino_acid_count": 11,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 64,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLL",
+          "properties_before": {
+            "length": 63,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 1,
+            "hydrophobic_AVILMFWY_count": 44,
+            "distinct_amino_acid_count": 11,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 65,
+          "choice": "E",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLV",
+          "properties_before": {
+            "length": 64,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 1,
+            "hydrophobic_AVILMFWY_count": 45,
+            "distinct_amino_acid_count": 11,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 66,
+          "choice": "E",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVE",
+          "properties_before": {
+            "length": 65,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 2,
+            "hydrophobic_AVILMFWY_count": 45,
+            "distinct_amino_acid_count": 11,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 67,
+          "choice": "K",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEE",
+          "properties_before": {
+            "length": 66,
+            "glycine_count": 1,
+            "basic_KR_count": 0,
+            "acidic_DE_count": 3,
+            "hydrophobic_AVILMFWY_count": 45,
+            "distinct_amino_acid_count": 11,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 68,
+          "choice": "R",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEK",
+          "properties_before": {
+            "length": 67,
+            "glycine_count": 1,
+            "basic_KR_count": 1,
+            "acidic_DE_count": 3,
+            "hydrophobic_AVILMFWY_count": 45,
+            "distinct_amino_acid_count": 12,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 69,
+          "choice": "N",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKR",
+          "properties_before": {
+            "length": 68,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 3,
+            "hydrophobic_AVILMFWY_count": 45,
+            "distinct_amino_acid_count": 13,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 70,
+          "choice": "N",
+          "confidence": 0.06,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRN",
+          "properties_before": {
+            "length": 69,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 3,
+            "hydrophobic_AVILMFWY_count": 45,
+            "distinct_amino_acid_count": 14,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 71,
+          "choice": "L",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNN",
+          "properties_before": {
+            "length": 70,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 3,
+            "hydrophobic_AVILMFWY_count": 45,
+            "distinct_amino_acid_count": 14,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 72,
+          "choice": "A",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNL",
+          "properties_before": {
+            "length": 71,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 3,
+            "hydrophobic_AVILMFWY_count": 46,
+            "distinct_amino_acid_count": 14,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 73,
+          "choice": "L",
+          "confidence": 0.07,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLA",
+          "properties_before": {
+            "length": 72,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 3,
+            "hydrophobic_AVILMFWY_count": 47,
+            "distinct_amino_acid_count": 14,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 74,
+          "choice": "L",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLAL",
+          "properties_before": {
+            "length": 73,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 3,
+            "hydrophobic_AVILMFWY_count": 48,
+            "distinct_amino_acid_count": 14,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 75,
+          "choice": "L",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALL",
+          "properties_before": {
+            "length": 74,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 3,
+            "hydrophobic_AVILMFWY_count": 49,
+            "distinct_amino_acid_count": 14,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 76,
+          "choice": "P",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLL",
+          "properties_before": {
+            "length": 75,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 3,
+            "hydrophobic_AVILMFWY_count": 50,
+            "distinct_amino_acid_count": 14,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 77,
+          "choice": "L",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLP",
+          "properties_before": {
+            "length": 76,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 3,
+            "hydrophobic_AVILMFWY_count": 50,
+            "distinct_amino_acid_count": 14,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 78,
+          "choice": "P",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPL",
+          "properties_before": {
+            "length": 77,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 3,
+            "hydrophobic_AVILMFWY_count": 51,
+            "distinct_amino_acid_count": 14,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 79,
+          "choice": "D",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLP",
+          "properties_before": {
+            "length": 78,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 3,
+            "hydrophobic_AVILMFWY_count": 51,
+            "distinct_amino_acid_count": 14,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 80,
+          "choice": "D",
+          "confidence": 0.07,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPD",
+          "properties_before": {
+            "length": 79,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 4,
+            "hydrophobic_AVILMFWY_count": 51,
+            "distinct_amino_acid_count": 15,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 81,
+          "choice": "S",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDD",
+          "properties_before": {
+            "length": 80,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 51,
+            "distinct_amino_acid_count": 15,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 82,
+          "choice": "S",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDS",
+          "properties_before": {
+            "length": 81,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 51,
+            "distinct_amino_acid_count": 15,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 83,
+          "choice": "S",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSS",
+          "properties_before": {
+            "length": 82,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 51,
+            "distinct_amino_acid_count": 15,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 84,
+          "choice": "N",
+          "confidence": 0.02,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSS",
+          "properties_before": {
+            "length": 83,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 51,
+            "distinct_amino_acid_count": 15,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 85,
+          "choice": "G",
+          "confidence": 0.02,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSN",
+          "properties_before": {
+            "length": 84,
+            "glycine_count": 1,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 51,
+            "distinct_amino_acid_count": 15,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 86,
+          "choice": "Y",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNG",
+          "properties_before": {
+            "length": 85,
+            "glycine_count": 2,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 51,
+            "distinct_amino_acid_count": 15,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 87,
+          "choice": "Y",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGY",
+          "properties_before": {
+            "length": 86,
+            "glycine_count": 2,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 52,
+            "distinct_amino_acid_count": 16,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 88,
+          "choice": "G",
+          "confidence": 0.07,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYY",
+          "properties_before": {
+            "length": 87,
+            "glycine_count": 2,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 53,
+            "distinct_amino_acid_count": 16,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 89,
+          "choice": "Y",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYG",
+          "properties_before": {
+            "length": 88,
+            "glycine_count": 3,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 53,
+            "distinct_amino_acid_count": 16,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 90,
+          "choice": "Y",
+          "confidence": 0.06,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGY",
+          "properties_before": {
+            "length": 89,
+            "glycine_count": 3,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 54,
+            "distinct_amino_acid_count": 16,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 91,
+          "choice": "Y",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYY",
+          "properties_before": {
+            "length": 90,
+            "glycine_count": 3,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 55,
+            "distinct_amino_acid_count": 16,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 92,
+          "choice": "W",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYY",
+          "properties_before": {
+            "length": 91,
+            "glycine_count": 3,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 56,
+            "distinct_amino_acid_count": 16,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 93,
+          "choice": "S",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYW",
+          "properties_before": {
+            "length": 92,
+            "glycine_count": 3,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 57,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 94,
+          "choice": "S",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWS",
+          "properties_before": {
+            "length": 93,
+            "glycine_count": 3,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 57,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 95,
+          "choice": "S",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSS",
+          "properties_before": {
+            "length": 94,
+            "glycine_count": 3,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 57,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 96,
+          "choice": "Y",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSS",
+          "properties_before": {
+            "length": 95,
+            "glycine_count": 3,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 57,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 97,
+          "choice": "A",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSY",
+          "properties_before": {
+            "length": 96,
+            "glycine_count": 3,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 58,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 98,
+          "choice": "A",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYA",
+          "properties_before": {
+            "length": 97,
+            "glycine_count": 3,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 59,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 99,
+          "choice": "G",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAA",
+          "properties_before": {
+            "length": 98,
+            "glycine_count": 3,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 60,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 100,
+          "choice": "A",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAG",
+          "properties_before": {
+            "length": 99,
+            "glycine_count": 4,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 60,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 101,
+          "choice": "Y",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGA",
+          "properties_before": {
+            "length": 100,
+            "glycine_count": 4,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 61,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 102,
+          "choice": "Y",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAY",
+          "properties_before": {
+            "length": 101,
+            "glycine_count": 4,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 62,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 103,
+          "choice": "A",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYY",
+          "properties_before": {
+            "length": 102,
+            "glycine_count": 4,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 63,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 104,
+          "choice": "G",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYA",
+          "properties_before": {
+            "length": 103,
+            "glycine_count": 4,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 64,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 105,
+          "choice": "S",
+          "confidence": 0.02,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAG",
+          "properties_before": {
+            "length": 104,
+            "glycine_count": 5,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 64,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 106,
+          "choice": "Y",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGS",
+          "properties_before": {
+            "length": 105,
+            "glycine_count": 5,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 64,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 107,
+          "choice": "G",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSY",
+          "properties_before": {
+            "length": 106,
+            "glycine_count": 5,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 65,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 108,
+          "choice": "A",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYG",
+          "properties_before": {
+            "length": 107,
+            "glycine_count": 6,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 65,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 109,
+          "choice": "S",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGA",
+          "properties_before": {
+            "length": 108,
+            "glycine_count": 6,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 66,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 110,
+          "choice": "A",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGAS",
+          "properties_before": {
+            "length": 109,
+            "glycine_count": 6,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 66,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 111,
+          "choice": "S",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASA",
+          "properties_before": {
+            "length": 110,
+            "glycine_count": 6,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 67,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 112,
+          "choice": "G",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASAS",
+          "properties_before": {
+            "length": 111,
+            "glycine_count": 6,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 67,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 113,
+          "choice": "A",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASG",
+          "properties_before": {
+            "length": 112,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 67,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 114,
+          "choice": "L",
+          "confidence": 0.02,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGA",
+          "properties_before": {
+            "length": 113,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 68,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 115,
+          "choice": "I",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGAL",
+          "properties_before": {
+            "length": 114,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 69,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 17,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 116,
+          "choice": "L",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALI",
+          "properties_before": {
+            "length": 115,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 70,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 18,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 117,
+          "choice": "I",
+          "confidence": 0.08,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALIL",
+          "properties_before": {
+            "length": 116,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 71,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 18,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 118,
+          "choice": "I",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILI",
+          "properties_before": {
+            "length": 117,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 72,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 19,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 119,
+          "choice": "I",
+          "confidence": 0.08,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILII",
+          "properties_before": {
+            "length": 118,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 73,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 20,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 120,
+          "choice": "I",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIII",
+          "properties_before": {
+            "length": 119,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 74,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 21,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 121,
+          "choice": "L",
+          "confidence": 0.06,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIII",
+          "properties_before": {
+            "length": 120,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 75,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 4,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 122,
+          "choice": "L",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIIL",
+          "properties_before": {
+            "length": 121,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 76,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 123,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILL",
+          "properties_before": {
+            "length": 122,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 77,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 124,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLV",
+          "properties_before": {
+            "length": 123,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 78,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 125,
+          "choice": "V",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVV",
+          "properties_before": {
+            "length": 124,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 79,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 126,
+          "choice": "P",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVV",
+          "properties_before": {
+            "length": 125,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 80,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 127,
+          "choice": "V",
+          "confidence": 0.07,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVP",
+          "properties_before": {
+            "length": 126,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 80,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 128,
+          "choice": "P",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPV",
+          "properties_before": {
+            "length": 127,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 81,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 129,
+          "choice": "P",
+          "confidence": 0.12,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVP",
+          "properties_before": {
+            "length": 128,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 81,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 130,
+          "choice": "P",
+          "confidence": 0.07,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPP",
+          "properties_before": {
+            "length": 129,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 81,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 131,
+          "choice": "V",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPP",
+          "properties_before": {
+            "length": 130,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 81,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 132,
+          "choice": "P",
+          "confidence": 0.06,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPV",
+          "properties_before": {
+            "length": 131,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 82,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 133,
+          "choice": "A",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVP",
+          "properties_before": {
+            "length": 132,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 82,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 134,
+          "choice": "V",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPA",
+          "properties_before": {
+            "length": 133,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 83,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 135,
+          "choice": "V",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAV",
+          "properties_before": {
+            "length": 134,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 84,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 136,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVV",
+          "properties_before": {
+            "length": 135,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 85,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 137,
+          "choice": "A",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVV",
+          "properties_before": {
+            "length": 136,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 86,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 138,
+          "choice": "V",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVA",
+          "properties_before": {
+            "length": 137,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 87,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 139,
+          "choice": "A",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAV",
+          "properties_before": {
+            "length": 138,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 88,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 140,
+          "choice": "P",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVA",
+          "properties_before": {
+            "length": 139,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 89,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 141,
+          "choice": "A",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAP",
+          "properties_before": {
+            "length": 140,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 89,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 142,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPA",
+          "properties_before": {
+            "length": 141,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 90,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 143,
+          "choice": "V",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAV",
+          "properties_before": {
+            "length": 142,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 91,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 144,
+          "choice": "A",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVV",
+          "properties_before": {
+            "length": 143,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 92,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 145,
+          "choice": "V",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVA",
+          "properties_before": {
+            "length": 144,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 93,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 22,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 146,
+          "choice": "P",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAV",
+          "properties_before": {
+            "length": 145,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 94,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 23,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 147,
+          "choice": "V",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVP",
+          "properties_before": {
+            "length": 146,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 94,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 23,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 148,
+          "choice": "V",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPV",
+          "properties_before": {
+            "length": 147,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 95,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 24,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 149,
+          "choice": "A",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVV",
+          "properties_before": {
+            "length": 148,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 96,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 25,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 150,
+          "choice": "P",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVA",
+          "properties_before": {
+            "length": 149,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 97,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 25,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 151,
+          "choice": "A",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAP",
+          "properties_before": {
+            "length": 150,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 97,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 25,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 152,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPA",
+          "properties_before": {
+            "length": 151,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 98,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 25,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 153,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAA",
+          "properties_before": {
+            "length": 152,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 99,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 25,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 154,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAV",
+          "properties_before": {
+            "length": 153,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 100,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 26,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 155,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVV",
+          "properties_before": {
+            "length": 154,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 101,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 27,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 156,
+          "choice": "P",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVV",
+          "properties_before": {
+            "length": 155,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 102,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 28,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 157,
+          "choice": "V",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVP",
+          "properties_before": {
+            "length": 156,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 102,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 28,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 158,
+          "choice": "A",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPV",
+          "properties_before": {
+            "length": 157,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 103,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 29,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 159,
+          "choice": "P",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVA",
+          "properties_before": {
+            "length": 158,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 104,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 29,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 160,
+          "choice": "V",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAP",
+          "properties_before": {
+            "length": 159,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 104,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 29,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 161,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPV",
+          "properties_before": {
+            "length": 160,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 105,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 30,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 162,
+          "choice": "V",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVV",
+          "properties_before": {
+            "length": 161,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 106,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 31,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 163,
+          "choice": "A",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVV",
+          "properties_before": {
+            "length": 162,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 107,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 32,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 164,
+          "choice": "V",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVA",
+          "properties_before": {
+            "length": 163,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 108,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 32,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 165,
+          "choice": "P",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAV",
+          "properties_before": {
+            "length": 164,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 109,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 33,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 166,
+          "choice": "V",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVP",
+          "properties_before": {
+            "length": 165,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 109,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 33,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 167,
+          "choice": "V",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPV",
+          "properties_before": {
+            "length": 166,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 110,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 34,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 168,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVV",
+          "properties_before": {
+            "length": 167,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 111,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 35,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 169,
+          "choice": "A",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVA",
+          "properties_before": {
+            "length": 168,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 112,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 35,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 170,
+          "choice": "R",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAA",
+          "properties_before": {
+            "length": 169,
+            "glycine_count": 7,
+            "basic_KR_count": 2,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 113,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 35,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 171,
+          "choice": "P",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAAR",
+          "properties_before": {
+            "length": 170,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 113,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 35,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 172,
+          "choice": "V",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARP",
+          "properties_before": {
+            "length": 171,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 113,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 35,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 173,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPV",
+          "properties_before": {
+            "length": 172,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 114,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 36,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 174,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVA",
+          "properties_before": {
+            "length": 173,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 115,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 36,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 175,
+          "choice": "L",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAA",
+          "properties_before": {
+            "length": 174,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 116,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 36,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 176,
+          "choice": "P",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAAL",
+          "properties_before": {
+            "length": 175,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 117,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 36,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 177,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALP",
+          "properties_before": {
+            "length": 176,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 117,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 36,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 178,
+          "choice": "V",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPA",
+          "properties_before": {
+            "length": 177,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 118,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 36,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 179,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAV",
+          "properties_before": {
+            "length": 178,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 119,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 37,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 180,
+          "choice": "V",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVA",
+          "properties_before": {
+            "length": 179,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 120,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 37,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 181,
+          "choice": "S",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAV",
+          "properties_before": {
+            "length": 180,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 121,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 38,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 182,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVS",
+          "properties_before": {
+            "length": 181,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 121,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 38,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 183,
+          "choice": "I",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSA",
+          "properties_before": {
+            "length": 182,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 122,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 38,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 184,
+          "choice": "S",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAI",
+          "properties_before": {
+            "length": 183,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 123,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 38,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 185,
+          "choice": "I",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAIS",
+          "properties_before": {
+            "length": 184,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 123,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 38,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 186,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISI",
+          "properties_before": {
+            "length": 185,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 124,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 38,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 187,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIV",
+          "properties_before": {
+            "length": 186,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 125,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 39,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 188,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVV",
+          "properties_before": {
+            "length": 187,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 126,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 40,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 189,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVV",
+          "properties_before": {
+            "length": 188,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 127,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 41,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 190,
+          "choice": "P",
+          "confidence": 0.05,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVV",
+          "properties_before": {
+            "length": 189,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 128,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 42,
+            "trailing_identical_run_length": 4,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 191,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVP",
+          "properties_before": {
+            "length": 190,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 128,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 42,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 192,
+          "choice": "V",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPV",
+          "properties_before": {
+            "length": 191,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 129,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 43,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 193,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVV",
+          "properties_before": {
+            "length": 192,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 130,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 44,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 194,
+          "choice": "V",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVA",
+          "properties_before": {
+            "length": 193,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 131,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 44,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 195,
+          "choice": "V",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAV",
+          "properties_before": {
+            "length": 194,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 132,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 45,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 196,
+          "choice": "V",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVV",
+          "properties_before": {
+            "length": 195,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 133,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 46,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 197,
+          "choice": "P",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVV",
+          "properties_before": {
+            "length": 196,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 134,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 47,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 198,
+          "choice": "V",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVP",
+          "properties_before": {
+            "length": 197,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 134,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 47,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 199,
+          "choice": "S",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPV",
+          "properties_before": {
+            "length": 198,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 135,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 48,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 200,
+          "choice": "V",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVS",
+          "properties_before": {
+            "length": 199,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 135,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 48,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 201,
+          "choice": "V",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSV",
+          "properties_before": {
+            "length": 200,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 136,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 49,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 202,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVV",
+          "properties_before": {
+            "length": 201,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 137,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 50,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 203,
+          "choice": "V",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVA",
+          "properties_before": {
+            "length": 202,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 138,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 50,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 204,
+          "choice": "V",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAV",
+          "properties_before": {
+            "length": 203,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 139,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 51,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 205,
+          "choice": "V",
+          "confidence": 0.04,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVV",
+          "properties_before": {
+            "length": 204,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 140,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 52,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 206,
+          "choice": "P",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVV",
+          "properties_before": {
+            "length": 205,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 141,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 53,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 207,
+          "choice": "S",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVP",
+          "properties_before": {
+            "length": 206,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 141,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 53,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 208,
+          "choice": "P",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPS",
+          "properties_before": {
+            "length": 207,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 141,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 53,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 209,
+          "choice": "S",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSP",
+          "properties_before": {
+            "length": 208,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 141,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 53,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 210,
+          "choice": "V",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPS",
+          "properties_before": {
+            "length": 209,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 141,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 53,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 211,
+          "choice": "S",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSV",
+          "properties_before": {
+            "length": 210,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 142,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 54,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 212,
+          "choice": "S",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVS",
+          "properties_before": {
+            "length": 211,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 142,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 54,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 213,
+          "choice": "S",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSS",
+          "properties_before": {
+            "length": 212,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 142,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 54,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 214,
+          "choice": "L",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSS",
+          "properties_before": {
+            "length": 213,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 142,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 54,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 215,
+          "choice": "S",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSL",
+          "properties_before": {
+            "length": 214,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 143,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 54,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 216,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLS",
+          "properties_before": {
+            "length": 215,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 143,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 54,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 217,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSA",
+          "properties_before": {
+            "length": 216,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 144,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 54,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 218,
+          "choice": "Y",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAA",
+          "properties_before": {
+            "length": 217,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 145,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 54,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 219,
+          "choice": "V",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAY",
+          "properties_before": {
+            "length": 218,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 146,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 54,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 220,
+          "choice": "S",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYV",
+          "properties_before": {
+            "length": 219,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 147,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 221,
+          "choice": "S",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVS",
+          "properties_before": {
+            "length": 220,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 147,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 222,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSS",
+          "properties_before": {
+            "length": 221,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 147,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 223,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSA",
+          "properties_before": {
+            "length": 222,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 148,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 224,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAA",
+          "properties_before": {
+            "length": 223,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 149,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 225,
+          "choice": "L",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAA",
+          "properties_before": {
+            "length": 224,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 150,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 3,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 226,
+          "choice": "L",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAAL",
+          "properties_before": {
+            "length": 225,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 151,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 227,
+          "choice": "A",
+          "confidence": 0.03,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAALL",
+          "properties_before": {
+            "length": 226,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 152,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 228,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAALLA",
+          "properties_before": {
+            "length": 227,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 153,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 229,
+          "choice": "L",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAALLAA",
+          "properties_before": {
+            "length": 228,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 154,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 230,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAALLAAL",
+          "properties_before": {
+            "length": 229,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 155,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 231,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAALLAALA",
+          "properties_before": {
+            "length": 230,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 156,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 232,
+          "choice": "L",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAALLAALAA",
+          "properties_before": {
+            "length": 231,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 157,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 233,
+          "choice": "A",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAALLAALAAL",
+          "properties_before": {
+            "length": 232,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 158,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 234,
+          "choice": "S",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAALLAALAALA",
+          "properties_before": {
+            "length": 233,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 159,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 235,
+          "choice": "S",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAALLAALAALAS",
+          "properties_before": {
+            "length": 234,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 159,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 236,
+          "choice": "P",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAALLAALAALASS",
+          "properties_before": {
+            "length": 235,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 159,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 237,
+          "choice": "P",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAALLAALAALASSP",
+          "properties_before": {
+            "length": 236,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 159,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 1,
+            "longest_identical_run_length": 4
+          }
+        },
+        {
+          "position": 238,
+          "choice": "P",
+          "confidence": null,
+          "prefix_before": "MLIVILIFVIVLAVSATITIPISPSIASTISIPSISGPIPAPIVIIIISVAVEAAVAVLVLLLVEEKRNNLALLLPLPDDSSSNGYYGYYYWSSSYAAGAYYAGSYGASASGALILIIIILLVVVPVPPPVPAVVVAVAPAVVAVPVVAPAAVVVPVAPVVVAVPVVAARPVAALPAVAVSAISIVVVVPVVAVVVPVSVVAVVVPSPSVSSSLSAAYVSSAAALLAALAALASSPP",
+          "properties_before": {
+            "length": 237,
+            "glycine_count": 7,
+            "basic_KR_count": 3,
+            "acidic_DE_count": 5,
+            "hydrophobic_AVILMFWY_count": 159,
+            "distinct_amino_acid_count": 17,
+            "most_common_amino_acid_count": 55,
+            "trailing_identical_run_length": 2,
+            "longest_identical_run_length": 4
+          }
+        }
+      ]
+    }
+  ]
+}
