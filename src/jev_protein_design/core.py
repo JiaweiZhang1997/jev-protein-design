@@ -5,6 +5,7 @@ from __future__ import annotations
 import json
 import os
 import time
+from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable
@@ -58,29 +59,46 @@ def load_local_env(path: Path) -> None:
 
 def observed_properties(sequence: str) -> dict[str, int]:
     """Simple counts supplied as facts, without claiming structure or function."""
+    counts = Counter(sequence)
+    trailing_run = len(sequence) - len(sequence.rstrip(sequence[-1])) if sequence else 0
+    longest_run = 0
+    run = 0
+    previous = None
+    for residue in sequence:
+        run = run + 1 if residue == previous else 1
+        longest_run = max(longest_run, run)
+        previous = residue
     return {
         "length": len(sequence),
         "glycine_count": sequence.count("G"),
         "basic_KR_count": sum(sequence.count(letter) for letter in "KR"),
         "acidic_DE_count": sum(sequence.count(letter) for letter in "DE"),
         "hydrophobic_AVILMFWY_count": sum(sequence.count(letter) for letter in "AVILMFWY"),
+        "distinct_amino_acid_count": len(counts),
+        "most_common_amino_acid_count": max(counts.values(), default=0),
+        "trailing_identical_run_length": trailing_run,
+        "longest_identical_run_length": longest_run,
     }
 
 
 def make_request(goal: str, prefix: str, max_length: int, min_length: int) -> dict:
-    criteria = {letter: f"Append {name} ({letter}) to the sequence" for letter, name in AMINO_ACIDS.items()}
+    criteria = {letter: f"Append {name} ({letter})" for letter, name in AMINO_ACIDS.items()}
     criteria[STOP] = "Finish the current sequence; append no residue"
     return {
         "model": "jev-latest",
         "state": {
             "task": "Toy protein sequence design, one amino acid at a time",
-            "desired_function": goal,
+            "desired_function": (
+                f"{goal}\n"
+                "Design constraint: avoid mechanical repetition, including long runs of one amino acid "
+                "and repeated short motifs. Use a varied amino-acid composition with plausible "
+                "hydrophobic, polar, charged, and turn-forming residues for the requested fold. "
+                "Check the entire sequence generated so far before each choice. Keep a repeated motif "
+                "only if it has a specific plausible role in the requested function."
+            ),
             "current_sequence": prefix,
-            "observed_prefix_properties": observed_properties(prefix),
-            "next_position": len(prefix) + 1,
             "minimum_length": min_length,
             "maximum_length": max_length,
-            "remaining_positions": max_length - len(prefix),
             "note": "There are no measured structural or functional properties in this state. Do not infer experimental success.",
         },
         "questions": {
@@ -88,8 +106,8 @@ def make_request(goal: str, prefix: str, max_length: int, min_length: int) -> di
                 "type": "choice",
                 "instructions": (
                     "For this exploratory toy design, choose the single next amino acid that seems most "
-                    "consistent with the desired function and existing prefix. Choose STOP if the "
-                    "sequence seems complete. This is a speculative choice, not experimental validation."
+                    "consistent with the desired function and existing prefix. Choose STOP "
+                    "if the sequence seems complete. This is a speculative choice, not experimental validation."
                 ),
                 "criteria": criteria,
             }
@@ -159,8 +177,8 @@ def generate_sequence(
         raise ValueError("TYPESAFE_API_KEY is missing. Set it in your environment or local .env file.")
     if any(letter not in AMINO_ACIDS for letter in prefix):
         raise ValueError("The prefix must contain only standard one-letter amino acid codes.")
-    if not (1 <= min_length <= max_length <= 200):
-        raise ValueError("Lengths must satisfy 1 <= min_length <= max_length <= 200.")
+    if not (1 <= min_length <= max_length <= 500):
+        raise ValueError("Lengths must satisfy 1 <= min_length <= max_length <= 500.")
     if len(prefix) > max_length:
         raise ValueError("The prefix is longer than max_length.")
     if delay < 0:

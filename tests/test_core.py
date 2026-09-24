@@ -10,7 +10,24 @@ class CoreTests(unittest.TestCase):
         criteria = payload["questions"]["next_residue"]["criteria"]
         self.assertEqual(set(criteria), set(AMINO_ACIDS) | {STOP})
         self.assertEqual(payload["state"]["current_sequence"], "AC")
-        self.assertEqual(payload["state"]["observed_prefix_properties"]["length"], 2)
+
+    def test_only_generated_sequence_changes_between_requests(self):
+        first = make_request("fluorescent protein", "G", 238, 200)
+        second = make_request("fluorescent protein", "GGGGGGGG", 238, 200)
+        self.assertIn("avoid mechanical repetition", first["state"]["desired_function"])
+        self.assertEqual(set(first["questions"]["next_residue"]["criteria"]), set(AMINO_ACIDS) | {STOP})
+        first["state"]["current_sequence"] = second["state"]["current_sequence"]
+        self.assertEqual(first, second)
+
+    def test_full_length_reference_sized_design_is_supported(self):
+        letters = tuple(AMINO_ACIDS)
+
+        def choose(payload, _key):
+            return letters[len(payload["state"]["current_sequence"]) % len(letters)], 0.5
+
+        result = generate_sequence("fluorescent protein", api_key="test", min_length=238,
+                                   max_length=238, chooser=choose)
+        self.assertEqual(len(result.sequence), 238)
 
     def test_recursion_stops_on_jev_stop(self):
         choices = iter([("A", 0.8), ("C", 0.7), (STOP, 0.9)])
