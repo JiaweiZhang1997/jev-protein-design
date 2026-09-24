@@ -48,6 +48,35 @@ Open the JSON traces to compare the goals, prefixes, chosen residues, and simple
 
 Two recorded Jev runs are in [`examples/`](examples/). With a goal of a glycine-rich toy peptide, it produced `GGGGGGGGGGGGGGG`. With a goal of alternating glycine and serine without identical neighbors, it produced `GSGSGSGS`. The second trace shows the prefix changing before each choice. These runs illustrate that Jev can follow simple sequence composition instructions; they also show how easily a naive prompt can collapse into a repetitive sequence. Results may vary between model versions and runs.
 
+### Two longer sequence and structure examples
+
+For a more readable structure comparison, Jev was asked to make **two 64-residue sequences** on 24 September 2026. Each residue was still selected from the same 21 options. One prompt asked for an A/L/E/K-rich helix-like scaffold; the other asked for a G/S-rich flexible linker. The complete outputs are:
+
+```fasta
+>helix64
+ALEKALEAALAEKAAAELLELLKELELLAAAEELKLAELLLEALALAAKAALEEAAAALAAAEE
+>flexible64
+GSGSGSSGSSGGSGSSSGSGGSGSGGGSSSGSGSSGGSSGGGSSSGGGGSGSSSSSGGGSGGSS
+```
+
+Each sequence was submitted once to [Boltz-2.1](https://api.boltz.bio/docs/api/guides/predictions/) and to [ESMFold v1](https://github.com/facebookresearch/esm#esmfold-structure-prediction). The figure overlays their predicted Cα backbones after rigid alignment of corresponding residue positions. It displays one predicted conformation per model and sequence, not an experimentally observed structure.
+
+![Two 64-residue Jev sequences and their Boltz versus ESMFold predicted C-alpha backbones](assets/structure-comparison.png)
+
+| Example | Boltz structure confidence | Boltz mean pLDDT | Boltz N→C distance | Boltz–ESMFold Cα RMSD | Local Swiss-Prot BLAST |
+| --- | ---: | ---: | ---: | ---: | --- |
+| Helix-biased | 0.81 | 0.86 | 16.0 Å | 1.7 Å | No reviewed hit |
+| G/S-rich flexible | 0.56 | 0.60 | 41.7 Å | 14.9 Å | No reviewed hit; low-complexity warning |
+
+The helix-biased sequence uses only four amino-acid types despite the prompt asking for variety. Its two predicted backbones overlap closely. The G/S-rich sequence repeats only two residue types; Boltz places its termini farther apart, and the two models place its backbone very differently. These differences show why a single appealing structure image is weak evidence for a toy design. **Model agreement, pLDDT, and BLAST similarity do not establish that either sequence folds or performs the requested function.** A BLAST miss does not establish novelty, especially for compositionally biased sequences. The RMSD values are calculated by Kabsch superposition of 64 corresponding Cα atoms; they compare model outputs, not experimental accuracy.
+
+The original files are available for inspection:
+
+- Helix-biased: [FASTA](examples/helix64.fasta), [Jev trace](examples/helix64.json), [Boltz mmCIF](examples/helix64.boltz.cif), [Boltz metrics](examples/helix64.boltz.metrics.json), [ESMFold PDB](examples/helix64.esmfold.pdb).
+- G/S-rich: [FASTA](examples/flexible64.fasta), [Jev trace](examples/flexible64.json), [Boltz mmCIF](examples/flexible64.boltz.cif), [Boltz metrics](examples/flexible64.boltz.metrics.json), [ESMFold PDB](examples/flexible64.esmfold.pdb).
+
+To redraw the figure, install the optional `numpy`, `matplotlib`, and `biopython` packages and run `python scripts/render_structure_comparison.py`. Boltz estimated the two live predictions at **$0.025 each** (estimate, not a final bill); ESMFold's public endpoint was used without a key. ESMFold output is attributed to Meta Platforms, Inc. under the [ESM Metagenomic Atlas terms and CC BY 4.0 notice](https://esmatlas.com/about).
+
 ### Compare with known proteins using local BLAST+
 
 Install [BLAST+](https://www.ncbi.nlm.nih.gov/books/NBK279690/) and build a local database from [UniProtKB/Swiss-Prot reviewed sequences](https://www.uniprot.org/help/downloads). The database download and index stay in the ignored `data/` directory and are **not** included in Git. Building it requires several hundred MB of disk space and may take a few minutes. On macOS with Homebrew:
@@ -77,7 +106,7 @@ The previous NCBI web search remains available as `--search-ncbi --ncbi-email yo
 
 ### Structure checks
 
-[ColabFold](https://github.com/sokrypton/ColabFold) and [Boltz](https://api.boltz.bio/docs/api/guides/predictions/) can predict a candidate's structure, but their confidence values do **not** establish the requested biological function. A meaningful structure comparison also needs a relevant reference structure and an alignment, followed by experimental validation. This toy project does not submit structure jobs automatically. Boltz's [cost guide](https://api.boltz.bio/docs/api/guides/costs/) says live-key runs are billed; its separate test-mode keys return synthetic results. Obtain a cost estimate before starting any live Boltz run.
+[ColabFold](https://github.com/sokrypton/ColabFold), [Boltz](https://api.boltz.bio/docs/api/guides/predictions/), and ESMFold can predict a candidate's structure, but their confidence values do **not** establish the requested biological function. A meaningful comparison with a known protein also needs a relevant reference structure and structural alignment, followed by experimental validation. The two examples above were submitted manually; the generation CLI does not submit structure jobs automatically. Boltz's [cost guide](https://api.boltz.bio/docs/api/guides/costs/) says live-key runs are billed; its separate test-mode keys return synthetic results. Obtain a cost estimate before starting any live Boltz run.
 
 ## How it works
 
