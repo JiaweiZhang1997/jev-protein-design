@@ -1,8 +1,8 @@
 # Jev Protein Design 🧬
 
-<p align="center"><img src="assets/logo.png" width="180" alt="Smiling teal protein ribbon with a coral amino-acid bead"></p>
-
 **A toy project that turns a desired protein function into a sequence of Jev decisions.**
+
+<p align="center"><img src="assets/logo.png" width="180" alt="Smiling teal protein ribbon with a coral amino-acid bead"></p>
 
 Describe a function in ordinary language. Jev chooses one of the **20 standard amino acids plus STOP**, appends it to the sequence, and repeats.
 
